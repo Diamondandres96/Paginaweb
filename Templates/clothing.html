@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">OUR COLLECTION💎</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{{ url_for('static', filename='medallo.jpg') }}" alt="Ropa" class="img-fluid" style="width: 100%; height: auto;">
+            <p>T-shirt Green Size m</p>
+        </div>
+        <div class="col-md-3">
+            <img src="{{ url_for('static', filename='verdelimon.jpg') }}" alt="Ropa" class="img-fluid" style="width: 100%; height: auto;">
+            <p>T-shirt Green lemon Size m</p>
+        </div>
+        <div class="col-md-3">
+            <img src="{{ url_for('static', filename='medalloblanca.jpg') }}" alt="Ropa" class="img-fluid" style="width: 100%; height: auto;">
+            <p>T-short White Size m</p>
+        </div>
+        <div class="col-md-3">
+            <img src="{{ url_for('static', filename='medallowhite.jpg') }}" alt="Ropa" class="img-fluid" style="width: 100%; height: auto;">
+            <p>T-shirt Medallo white m</p>
+        </div>
+    </div>
+    <hr class="my-4">
+    <p class="lead">
+        <!-- Texto adicional -->
+    </p>
+    <hr class="my-4">
+    <p>
+        <!-- Más texto adicional -->
+    </p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">See more</a>
+</div>
+{% endblock %}

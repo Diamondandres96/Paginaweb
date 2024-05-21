@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">ABOUT US💎</h1>
+
+    <!-- Dividir el contenido en dos columnas: una para el texto y otra para la imagen -->
+    <div class="row">
+        <div class="col-md-6 order-md-2">
+            <!-- Imagen -->
+            <img src="{{ url_for('static', filename='20230815_165248.jpg') }}" alt="Ropa" class="img-fluid" style="width: 100%; height: auto;">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <!-- Texto -->
+            <p class="lead">
+                <span class="font-weight-bold">Born from the passion for youthful style and fueled by a penchant for web design, our fashion brand emerges as a beacon of contemporary trends and digital innovation.</span>
+        
+                <span class="font-italic">Nestled at the intersection of fashion and technology, our brand takes its first steps in Colombia, drawing inspiration from the dynamic energy of its streets and the entrepreneurial spirit of its youth.</span>
+                
+                While our roots may lie in the heart of Colombia, our vision transcends borders, catering to young individuals worldwide who seek more than just clothing – they seek expression, confidence, and a sense of belonging.
+                
+                Our curated collection speaks the language of today's youth, blending street-style aesthetics with urban chic to create a fusion of trends that resonate with the modern generation.
+                
+                Each garment is carefully selected to reflect the diversity and dynamism of young fashion enthusiasts, offering a blend of versatility, comfort, and style that adapts seamlessly to any lifestyle.
+                
+                Join us as we embark on this journey of self-expression and discovery, where fashion knows no boundaries and every piece becomes a statement of individuality and empowerment."
+            </p>
+            <br>
+            <h2>CEO</h2>
+            <!-- Información del dueño de la empresa -->
+            <p>
+                "I am the owner of the company and I was born in Santa Marta, Colombia. I speak English, Dutch, French, and Spanish. Additionally, I am a technologist in systems, tourism, and hotel management, and a software engineer".
+            </p>
+         
+            <img src="{{ url_for('static', filename='arte.jpg') }}" alt="arte" class="img-fluid" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+ 
+</div>
+{% endblock %}
